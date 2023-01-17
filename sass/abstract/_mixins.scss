@@ -22,6 +22,19 @@
 	left:0;
 }
 
+//FISH GENERATOR
+@mixin fish-generator ($fish) {
+	@each $nom, $valeur in v.$fish {
+		&--#{$nom} {
+			background:darken(v.$color-fish,map-get($valeur, couleur));
+			width:map-get($valeur, width);
+			height:map-get($valeur, height);
+			top:percentage(calc(random(90)/100));
+			left:calc(map-get($valeur, width)*-1);
+			animation: fish-anim map-get($valeur, anim-duration) map-get($valeur, anim-delay) map-get($valeur, anim-type) cubic-bezier(.84,.74,.44,.65) infinite;
+		}
+	}
+}
 
 
 

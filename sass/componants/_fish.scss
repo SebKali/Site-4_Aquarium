@@ -1,0 +1,20 @@
+
+// POISSON
+
+@use "./../abstract/_variables.scss" as v;
+@use "./../abstract/_mixins.scss" as m;
+
+
+.fish {
+
+	background:v.$color-bg;
+	border-radius:3px;
+	@include m.pos-absolute-0;	
+	@include m.fish-generator (v.$fish);
+}
+
+@keyframes fish-anim {
+	#{v.$percentage-fish}%, 100% {
+		transform:translateX(110vw);
+	}
+}
