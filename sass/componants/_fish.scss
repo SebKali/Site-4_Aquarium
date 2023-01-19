@@ -9,11 +9,15 @@
 
 	background:v.$color-bg;
 	border-radius:3px;
+	box-shadow:4px 4px 15px rgba(0,0,0,0.1); 
 	@include m.pos-absolute-0;	
 	@include m.fish-generator (v.$fish);
 }
 
 @keyframes fish-anim {
+	#{v.$percentage-fish2}% {
+		transform:translateY(5vh);
+		}
 	#{v.$percentage-fish}%, 100% {
 		transform:translateX(110vw);
 	}

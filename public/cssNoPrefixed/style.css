@@ -9,7 +9,7 @@
 body {
   width: 100%;
   margin: auto;
-  background-color: #F0DFC7;
+  background-color: #FFFFFF;
   box-sizing: border-box;
 }
 
@@ -32,8 +32,9 @@ body {
 }
 
 .fish {
-  background: #F0DFC7;
+  background: #FFFFFF;
   border-radius: 3px;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 0;
   right: 0;
@@ -44,69 +45,94 @@ body {
   background: #d5a662;
   width: 4px;
   height: 2px;
-  top: 53%;
+  top: 33%;
   left: -4px;
-  animation: fish-anim 27690ms 19791ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 23821ms 21529ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--xs {
   background: #dab177;
   width: 5px;
   height: 2px;
-  top: 80%;
+  top: 64%;
   left: -5px;
-  animation: fish-anim 27558ms 24299ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 27592ms 13276ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--s {
   background: #e0bd8b;
   width: 6px;
   height: 3px;
-  top: 48%;
+  top: 19%;
   left: -6px;
-  animation: fish-anim 20818ms 10639ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 17537ms 32420ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--m {
   background: #e3c397;
   width: 10px;
   height: 5px;
-  top: 21%;
+  top: 69%;
   left: -10px;
-  animation: fish-anim 23791ms 8550ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 18353ms 4013ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--l {
   background: #e5c89f;
   width: 12px;
   height: 6px;
-  top: 68%;
+  top: 17%;
   left: -12px;
-  animation: fish-anim 12174ms 16257ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 13803ms 13523ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--xl {
   background: #e7cda7;
   width: 14px;
   height: 8px;
-  top: 61%;
+  top: 38%;
   left: -14px;
-  animation: fish-anim 10393ms 28728ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 10840ms 30934ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--xxl {
   background: #ebd4b3;
   width: 16px;
   height: 8px;
-  top: 48%;
+  top: 3%;
   left: -16px;
-  animation: fish-anim 18383ms 9996ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 10775ms 3190ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 
 @keyframes fish-anim {
-  84%, 100% {
+  39% {
+    transform: translateY(5vh);
+  }
+  81%, 100% {
     transform: translateX(110vw);
   }
 }
-.arrival {
+.aquarium {
   position: relative;
+  z-index: 1;
   width: 100%;
   height: 100vh;
   background: linear-gradient(0deg, #020024 2%, #090979 39%, #00d4ff 100%);
+}
+.aquarium::after {
+  content: "";
+  opacity: 0;
+  animation: anim-aquarium 20s 1s alternate linear infinite;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(2deg, #020024 6%, #090979 33%, #00d4ff 100%);
+}
+
+@keyframes anim-aquarium {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 /* ABSTRACT */
 /* -------- */
