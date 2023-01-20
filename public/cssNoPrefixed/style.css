@@ -53,64 +53,64 @@ body {
   background: #d5a662;
   width: 4px;
   height: 2px;
-  top: 77%;
+  top: 16%;
   left: -4px;
-  animation: fish-anim 21615ms 19821ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 27005ms 7817ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--xs {
   background: #dab177;
   width: 5px;
   height: 2px;
-  top: 77%;
+  top: 48%;
   left: -5px;
-  animation: fish-anim 18298ms 8040ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 26277ms 20723ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--s {
   background: #e0bd8b;
   width: 6px;
   height: 3px;
-  top: 71%;
+  top: 78%;
   left: -6px;
-  animation: fish-anim 25718ms 33521ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 18445ms 10260ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--m {
   background: #e3c397;
   width: 10px;
   height: 5px;
-  top: 47%;
+  top: 26%;
   left: -10px;
-  animation: fish-anim 15384ms 395ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 24405ms 21470ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--l {
   background: #e5c89f;
   width: 12px;
   height: 6px;
-  top: 44%;
+  top: 4%;
   left: -12px;
-  animation: fish-anim 14843ms 2838ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 15305ms 13148ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--xl {
   background: #e7cda7;
   width: 14px;
   height: 8px;
-  top: 20%;
+  top: 78%;
   left: -14px;
-  animation: fish-anim 18168ms 40425ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 10837ms 27835ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--xxl {
   background: #ebd4b3;
   width: 16px;
   height: 8px;
-  top: 30%;
+  top: 12%;
   left: -16px;
-  animation: fish-anim 12454ms 8053ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 14803ms 5859ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 
 @keyframes fish-anim {
-  44% {
+  5% {
     transform: translateY(5vh);
   }
-  88%, 100% {
+  86%, 100% {
     transform: translateX(110vw);
   }
 }
@@ -122,7 +122,6 @@ body {
   transform: translate(-50%, -50%) scale(1);
   transition: all 320ms 90ms ease-in-out;
   padding: 0.5rem;
-  border: 1px solid #F0DFC7;
   animation: anim-button__appear 11s 2s backwards cubic-bezier(0.68, -0.55, 0.38, 1.55), anim-button__opacity 10s 13s cubic-bezier(0.68, -0.55, 0.38, 1.55) alternate infinite;
 }
 .button::before {
@@ -136,7 +135,7 @@ body {
   border-radius: 4px;
   background-color: #F0DFC7;
   animation: anim-left 2s 0s cubic-bezier(0.68, -0.55, 0.38, 1.55) alternate infinite;
-  transition: all 0.5s cubic-bezier(0.99, -0.22, 0.27, 1.27);
+  transition: all 0.5s cubic-bezier(0.99, -0.22, 0.27, 1.2);
 }
 .button::after {
   content: "";
@@ -149,7 +148,7 @@ body {
   border-radius: 4px;
   background-color: #ce9546;
   animation: anim-bottom 2.8s 0.4s cubic-bezier(0.68, -0.55, 0.38, 1.55) alternate infinite;
-  transition: all 0.45s 0.1s cubic-bezier(0.99, -0.22, 0.27, 1.27);
+  transition: all 0.45s 0.1s cubic-bezier(0.99, -0.22, 0.27, 1.2);
 }
 .button:hover {
   color: #020024;

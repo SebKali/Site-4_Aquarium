@@ -16,7 +16,7 @@
 	padding:0.5rem;
 	
 	//PAINT
-	@include m.borders (v.$color-fish);
+	//@include m.borders (v.$color-fish);
 	animation:anim-button__appear 11s 2s backwards v.$cubic-rebond, anim-button__opacity 10s 13s v.$cubic-rebond alternate infinite;
 
 	&::before {
