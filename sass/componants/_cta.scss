@@ -1,0 +1,124 @@
+
+// BOUTON CTA
+
+@use "./../abstract/_variables.scss" as v;
+@use "./../abstract/_mixins.scss" as m;
+
+.button {
+	cursor:pointer;
+
+	//LAYOUT
+	position:absolute;
+	top:70%;
+	left:50%;
+	transform:translate(-50%, -50%) scale(1);
+	transition:all 320ms 90ms ease-in-out;
+	padding:0.5rem;
+	
+	//PAINT
+	@include m.borders (v.$color-fish);
+	animation:anim-button__appear 11s 2s backwards v.$cubic-rebond, anim-button__opacity 10s 13s v.$cubic-rebond alternate infinite;
+
+	&::before {
+		content:"";
+		z-index:-1;
+
+		//LAYOUT
+		width:6px;
+		height:10px;
+		position:absolute;
+		top:-0.5rem;
+		left:-0.5rem;
+
+		//PAINT
+		border-radius:4px;
+		background-color:v.$color-fish;
+
+		//ANIMATION
+		animation: anim-left 2s 0s v.$cubic-rebond alternate infinite;
+		transition:all 0.5s v.$cubic-rebond--ease;
+	}
+
+	&::after {
+		content:"";
+		z-index:-2;
+
+		//LAYOUT
+		width:13px;
+		height:6px;
+		position:absolute;
+		bottom:-0.5rem;
+		right:-0.5rem;
+
+
+		//PAINT
+		border-radius:4px;
+		background-color:darken(v.$color-fish,32%);
+
+		//ANIMATIOn
+		animation: anim-bottom 2.8s 0.4s v.$cubic-rebond alternate infinite;
+		transition:all 0.45s 0.1s v.$cubic-rebond--ease;
+	}
+
+	&:hover {
+		//opacity:1 !important;i
+		color:v.$bleu-abysse;
+		transform:translate(-50%, -50%) scale(1.1);
+
+		&::before {
+			border-radius:0;
+			top:0;
+			left:0;
+			height:100%;
+			width:100%;
+			animation:none;
+		}
+
+		&::after {
+			border-radius:0;
+			bottom:-0.25rem;
+			right:-0.18rem;
+			height:100%;
+			width:100%;
+			animation:none;
+		}
+
+	}
+
+}
+
+@keyframes anim-button__appear {
+	0% {
+		opacity:0;
+	}
+	100%{
+		opacity:0.65;
+	}
+}
+
+@keyframes anim-button__opacity {
+	0% {
+		opacity:0.65;
+	}
+	100% {
+		opacity:0.95;
+	}
+}
+
+@keyframes anim-left {
+	from {
+		transform:translate(0rem, 0rem);
+	}
+	to {
+		transform:translate(0rem, 3.6rem);
+	}
+}
+
+@keyframes anim-bottom {
+	from {
+		transform:translate(0rem, 0rem);
+	}
+	to {
+		transform:translate(-20.9rem, 0rem);
+	}
+}

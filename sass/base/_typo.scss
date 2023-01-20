@@ -1,10 +1,19 @@
 
 // TYPOGRAPHY
 
-@use "./../abstract/_variables.scss" as variable;
-@use "./../abstract/_mixins.scss" as mixin;
+@use "./../abstract/_variables.scss" as v;
+@use "./../abstract/_mixins.scss" as m;
 
 
 body {
-	font-family:Arial,sans-serif;
+	font-family:Lato, Arial,sans-serif;
+}
+
+
+.button {
+	font-size:map-get(v.$font-size, button);
+	color:v.$color-fish;
+	font-weight:500;
+	font-style:normal;
+	letter-spacing:0.2rem;
 }

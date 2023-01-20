@@ -34,6 +34,7 @@ $font-size :(
 	titre1:3rem,
 	titre2:2rem,
 	titre3:1.5rem,
+	button:2rem,
 	texte:1rem,
 	quote:1.5rem,
 	nav:1.5rem,
@@ -42,6 +43,10 @@ $font-size :(
 // PERCENTAGE KEYFRAME FISH
 $percentage-fish:calc(random(15) + 75);
 $percentage-fish2:random(60);
+
+// ANIMATION CUBIC-BEZIER
+$cubic-rebond: cubic-bezier(0.68, -0.55, 0.38, 1.55);
+$cubic-rebond--ease:cubic-bezier(.99,-0.22,.27,1.27);
 
 //FISH
 $fish :(
