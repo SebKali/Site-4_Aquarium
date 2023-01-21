@@ -16,26 +16,40 @@
 	//PAINT
 	background: linear-gradient(0deg, v.$color3 2%, v.$color1 39%, v.$color2 100%);
 	
+	&__abyss {
+		opacity:0;
+		transition:opacity 4800ms 50ms;
+
+		//LAYOUT
+		@include m.pos-absolute-0;
+			
+		//PAINT
+		background: linear-gradient(0deg, v.$color3 96%, v.$color1 100%);
+		//background:red;
+	}
+
 	&::after {
 		content:"";
 		opacity:0;
-		animation:anim-aquarium 20s 1s alternate linear infinite;
+		animation:anim-aquarium 30s 1s alternate linear infinite;
 		z-index:-1;
 
 		//LAYOUT
 		@include m.pos-absolute-0;
 
 		//PAINT
-		background: linear-gradient(2deg, v.$color3 6%, v.$color1 33%, v.$color2 100%);
+		background: linear-gradient(3deg, v.$color3 32%, v.$color1 76%);
 
 	}
+
 }
 
 @keyframes anim-aquarium {
 	50% {
-		opacity:1;
+		opacity:0.8;
 	}
 	100% {
 		opacity:0;
 	}
 }
+

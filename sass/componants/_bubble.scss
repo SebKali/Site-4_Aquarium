@@ -1,0 +1,16 @@
+
+// BUBBLE
+
+@use "./../abstract/_variables.scss" as v;
+@use "./../abstract/_mixins.scss" as m;
+
+.bubble {
+	opacity:0;
+	background:transparent;
+	border:1px solid v.$color-bubble;
+	position:absolute;
+	border-radius:20px;
+
+	@include m.bubble-generator (v.$bubble);
+}
+

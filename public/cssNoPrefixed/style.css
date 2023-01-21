@@ -27,6 +27,10 @@ ol, ul {
   list-style: none;
 }
 
+input {
+  display: none;
+}
+
 body {
   font-family: Lato, Arial, sans-serif;
 }
@@ -37,6 +41,56 @@ body {
   font-weight: 500;
   font-style: normal;
   letter-spacing: 0.2rem;
+}
+
+.bubble {
+  opacity: 0;
+  background: transparent;
+  border: 1px solid #F0DFC7;
+  position: absolute;
+  border-radius: 20px;
+}
+.bubble--xxs {
+  width: 8px;
+  height: 8px;
+  top: 62%;
+  left: 56%;
+}
+.bubble--xs {
+  width: 10px;
+  height: 10px;
+  top: 64%;
+  left: 42%;
+}
+.bubble--s {
+  width: 12px;
+  height: 12px;
+  top: 61%;
+  left: 52%;
+}
+.bubble--m {
+  width: 15px;
+  height: 15px;
+  top: 60%;
+  left: 45%;
+}
+.bubble--l {
+  width: 18px;
+  height: 18px;
+  top: 65%;
+  left: 53%;
+}
+.bubble--xl {
+  width: 22px;
+  height: 22px;
+  top: 65%;
+  left: 56%;
+}
+.bubble--xxl {
+  width: 25px;
+  height: 25px;
+  top: 62.5%;
+  left: 45%;
 }
 
 .fish {
@@ -53,69 +107,70 @@ body {
   background: #d5a662;
   width: 4px;
   height: 2px;
-  top: 16%;
+  top: 93%;
   left: -4px;
-  animation: fish-anim 27005ms 7817ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 23435ms 16087ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--xs {
   background: #dab177;
   width: 5px;
   height: 2px;
-  top: 48%;
+  top: 1%;
   left: -5px;
-  animation: fish-anim 26277ms 20723ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 27123ms 16156ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--s {
   background: #e0bd8b;
   width: 6px;
   height: 3px;
-  top: 78%;
+  top: 83%;
   left: -6px;
-  animation: fish-anim 18445ms 10260ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 24080ms 14865ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--m {
   background: #e3c397;
   width: 10px;
   height: 5px;
-  top: 26%;
+  top: 89%;
   left: -10px;
-  animation: fish-anim 24405ms 21470ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 15755ms 32221ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--l {
   background: #e5c89f;
   width: 12px;
   height: 6px;
-  top: 4%;
+  top: 88%;
   left: -12px;
-  animation: fish-anim 15305ms 13148ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 13027ms 25216ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--xl {
   background: #e7cda7;
   width: 14px;
   height: 8px;
-  top: 78%;
+  top: 50%;
   left: -14px;
-  animation: fish-anim 10837ms 27835ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 19192ms 34255ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--xxl {
   background: #ebd4b3;
   width: 16px;
   height: 8px;
-  top: 12%;
+  top: 22%;
   left: -16px;
-  animation: fish-anim 14803ms 5859ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 9987ms 14771ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
-
 @keyframes fish-anim {
-  5% {
+  33% {
     transform: translateY(5vh);
   }
-  86%, 100% {
+  77%, 100% {
     transform: translateX(110vw);
   }
 }
+
 .button {
   cursor: pointer;
+  z-index: 5;
   position: absolute;
   top: 70%;
   left: 50%;
@@ -135,7 +190,7 @@ body {
   border-radius: 4px;
   background-color: #F0DFC7;
   animation: anim-left 2s 0s cubic-bezier(0.68, -0.55, 0.38, 1.55) alternate infinite;
-  transition: all 0.5s cubic-bezier(0.99, -0.22, 0.27, 1.2);
+  transition: all 0.5s cubic-bezier(0.99, -0.22, 0.27, 1.19);
 }
 .button::after {
   content: "";
@@ -148,7 +203,7 @@ body {
   border-radius: 4px;
   background-color: #ce9546;
   animation: anim-bottom 2.8s 0.4s cubic-bezier(0.68, -0.55, 0.38, 1.55) alternate infinite;
-  transition: all 0.45s 0.1s cubic-bezier(0.99, -0.22, 0.27, 1.2);
+  transition: all 0.45s 0.1s cubic-bezier(0.99, -0.22, 0.27, 1.19);
 }
 .button:hover {
   color: #020024;
@@ -169,6 +224,179 @@ body {
   height: 100%;
   width: 100%;
   animation: none;
+}
+.button:hover ~ .bubble--xxs {
+  animation: bubble-anim--xxs 3000ms 850ms linear infinite;
+}
+@keyframes bubble-anim--xxs {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+    left: 57%;
+  }
+  75% {
+    opacity: 1;
+    left: 55%;
+  }
+  100% {
+    opacity: 0;
+    top: 34%;
+  }
+}
+.button:hover ~ .bubble--xs {
+  animation: bubble-anim--xs 4000ms 740ms linear infinite;
+}
+@keyframes bubble-anim--xs {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+    left: 43.4%;
+  }
+  75% {
+    opacity: 1;
+    left: 40.6%;
+  }
+  100% {
+    opacity: 0;
+    top: 38%;
+  }
+}
+.button:hover ~ .bubble--s {
+  animation: bubble-anim--s 3500ms 1040ms linear infinite;
+}
+@keyframes bubble-anim--s {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+    left: 52.5%;
+  }
+  75% {
+    opacity: 1;
+    left: 51.5%;
+  }
+  100% {
+    opacity: 0;
+    top: 39%;
+  }
+}
+.button:hover ~ .bubble--m {
+  animation: bubble-anim--m 4000ms 1080ms linear infinite;
+}
+@keyframes bubble-anim--m {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+    left: 46.2%;
+  }
+  75% {
+    opacity: 1;
+    left: 43.8%;
+  }
+  100% {
+    opacity: 0;
+    top: 35%;
+  }
+}
+.button:hover ~ .bubble--l {
+  animation: bubble-anim--l 2500ms 810ms linear infinite;
+}
+@keyframes bubble-anim--l {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+    left: 54.1%;
+  }
+  75% {
+    opacity: 1;
+    left: 51.9%;
+  }
+  100% {
+    opacity: 0;
+    top: 47%;
+  }
+}
+.button:hover ~ .bubble--xl {
+  animation: bubble-anim--xl 3200ms 720ms linear infinite;
+}
+@keyframes bubble-anim--xl {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+    left: 57%;
+  }
+  75% {
+    opacity: 1;
+    left: 55%;
+  }
+  100% {
+    opacity: 0;
+    top: 46%;
+  }
+}
+.button:hover ~ .bubble--xxl {
+  animation: bubble-anim--xxl 4400ms 680ms linear infinite;
+}
+@keyframes bubble-anim--xxl {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+    left: 45.8%;
+  }
+  75% {
+    opacity: 1;
+    left: 44.2%;
+  }
+  100% {
+    opacity: 0;
+    top: 46.5%;
+  }
+}
+.button:hover ~ .aquarium__abyss {
+  opacity: 1;
+  transition: opacity 14800ms 250ms;
+}
+.button:active::before {
+  transform: translate(-0.45rem, -0.1rem);
+  transition: transform 120ms cubic-bezier(0.99, -0.22, 0.27, 1.19);
+}
+.button:active::after {
+  transform: translate(0.35rem, 0.08rem);
+  transition: transform 140ms cubic-bezier(0.99, -0.22, 0.27, 1.19);
 }
 
 @keyframes anim-button__appear {
@@ -210,22 +438,32 @@ body {
   height: 100vh;
   background: linear-gradient(0deg, #020024 2%, #090979 39%, #00d4ff 100%);
 }
+.aquarium__abyss {
+  opacity: 0;
+  transition: opacity 4800ms 50ms;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(0deg, #020024 96%, #090979 100%);
+}
 .aquarium::after {
   content: "";
   opacity: 0;
-  animation: anim-aquarium 20s 1s alternate linear infinite;
+  animation: anim-aquarium 30s 1s alternate linear infinite;
   z-index: -1;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(2deg, #020024 6%, #090979 33%, #00d4ff 100%);
+  background: linear-gradient(3deg, #020024 32%, #090979 76%);
 }
 
 @keyframes anim-aquarium {
   50% {
-    opacity: 1;
+    opacity: 0.8;
   }
   100% {
     opacity: 0;

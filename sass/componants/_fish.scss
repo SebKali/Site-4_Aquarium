@@ -14,11 +14,3 @@
 	@include m.fish-generator (v.$fish);
 }
 
-@keyframes fish-anim {
-	#{v.$percentage-fish2}% {
-		transform:translateY(5vh);
-		}
-	#{v.$percentage-fish}%, 100% {
-		transform:translateX(110vw);
-	}
-}

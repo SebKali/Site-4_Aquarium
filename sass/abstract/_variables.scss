@@ -18,6 +18,7 @@ $color1:$bleu-inter;
 $color2:$bleu-surface;
 $color3:$bleu-abysse;
 $color-fish:$ivoire;
+$color-bubble:$ivoire;
 $color-bg:$white;
 
 // PATH
@@ -47,6 +48,7 @@ $percentage-fish2:random(60);
 // ANIMATION CUBIC-BEZIER
 $cubic-rebond: cubic-bezier(0.68, -0.55, 0.38, 1.55);
 $cubic-rebond--ease:cubic-bezier(.99,-0.22,.27,1.19);
+$cubic-bubble:cubic-bezier(.99,-0.11,1,1.5);
 
 //FISH
 $fish :(
@@ -106,7 +108,85 @@ $fish :(
 		anim-type:reverse,
 		couleur:5%,
 		),
+);
 
+//BUBBLE
+$bubble :(
+	xxs:(
+		width:8px,
+		height:8px,
+		anim-duration:3000ms,
+		anim-delay:850ms,
+		top-start:62%,
+		top-delta:28%,
+		left-start:percentage(calc((60 - random(20))/100)),
+		left-delta:1%,
+		),
+	xs:(
+		width:10px,
+		height:10px,
+		anim-duration:4000ms,
+		anim-delay:740ms,
+		top-start:64%,
+		top-delta:26%,
+		left-start:percentage(calc((60 - random(20))/100)),
+		left-delta:1.4%,
+
+		),
+	s:(
+		width:12px,
+		height:12px,
+		anim-duration:3500ms,
+		anim-delay:1040ms,
+		top-start:61%,
+		top-delta:22%,
+		left-start:percentage(calc((60 - random(20))/100)),
+		left-delta:0.5%,
+
+		),
+	m:(
+		width:15px,
+		height:15px,
+		anim-duration:4000ms,
+		anim-delay:1080ms,
+		top-start:60%,
+		top-delta:25%,
+		left-start:percentage(calc((60 - random(20))/100)),
+		left-delta:1.2%,
+		),
+	l:(
+		width:18px,
+		height:18px,
+		anim-duration:2500ms,
+		anim-delay:810ms,
+		top-start:65%,
+		top-delta:18%,
+		left-start:percentage(calc((60 - random(20))/100)),
+		left-delta:1.1%,
+
+		),
+	xl:(
+		width:22px,
+		height:22px,
+		anim-duration:3200ms,
+		anim-delay:720ms,
+		top-start:65%,
+		top-delta:19%,
+		left-start:percentage(calc((60 - random(20))/100)),
+		left-delta:1%,
+
+		),
+	xxl:(
+		width:25px,
+		height:25px,
+		anim-duration:4400ms,
+		anim-delay:680ms,
+		top-start:62.5%,
+		top-delta:16%,
+		left-start:percentage(calc((60 - random(20))/100)),
+		left-delta:0.8%,
+
+		),
 );
 
 

@@ -32,10 +32,61 @@
 			top:percentage(calc(random(97)/100));
 			left:calc(map-get($valeur, width)*-1);
 			animation: fish-anim map-get($valeur, anim-duration) map-get($valeur, anim-delay) map-get($valeur, anim-type) cubic-bezier(.84,.74,.44,.65) infinite;
+			}
+		}
+	
+	//FISH ANIMATE
+	@keyframes fish-anim {
+	#{v.$percentage-fish2}% {
+		transform:translateY(5vh);
+		}
+	#{v.$percentage-fish}%, 100% {
+		transform:translateX(110vw);
 		}
 	}
 }
 
+//BUBBLE GENERATOR
+@mixin bubble-generator ($bubble) {
+	@each $nom, $valeur in v.$bubble {
+		&--#{$nom} {
+			width:map-get($valeur, width);
+			height:map-get($valeur, height);
+			top:map-get($valeur, top-start);
+			left:map-get($valeur, left-start);
+		}
+	}
+}
+
+//BUBBLE ANIMATE
+@mixin anim-bubble ($bubble) {
+	@each $nom, $valeur in v.$bubble {
+		~ .bubble--#{$nom} {
+			animation: bubble-anim--#{$nom} map-get($valeur, anim-duration) map-get($valeur, anim-delay) map-get($valeur, anim-type) linear infinite;
+		}
+
+		@keyframes bubble-anim--#{$nom} {
+			0% {
+				opacity:0;
+			}
+			25% {
+				opacity:0.7;
+			}
+			50% {
+				opacity:1;
+				left:map-get($valeur, left-start) + map-get($valeur, left-delta);
+			}
+			75% {
+				opacity:1;
+				left:map-get($valeur, left-start) - map-get($valeur, left-delta);
+			}
+			100% {
+				opacity:0;
+				top:map-get($valeur, top-start) - map-get($valeur, top-delta);
+			}
+		}
+	}
+}
 
 
 // MIXIN @MEDIA BREAKPOINT
