@@ -18,7 +18,7 @@
 	
 	&__abyss {
 		opacity:0;
-		transition:opacity 4800ms 50ms;
+		transition:opacity 7500ms 50ms;
 
 		//LAYOUT
 		@include m.pos-absolute-0;
@@ -46,7 +46,7 @@
 
 @keyframes anim-aquarium {
 	50% {
-		opacity:0.8;
+		opacity:0.6;
 	}
 	100% {
 		opacity:0;

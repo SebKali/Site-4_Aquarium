@@ -66,6 +66,12 @@
 		color:v.$bleu-abysse;
 		transform:translate(-50%, -50%) scale(1.1);
 		
+		// COULEUR PLONGEE
+		~ .aquarium__abyss {
+			opacity:1;
+			transition:opacity 5500ms 250ms v.$cubic-rebond--ease;
+		}
+
 		&::before {
 			border-radius:0;
 			top:0;
@@ -87,10 +93,18 @@
 		//BUBBLE ANIMATE
 		@include m.anim-bubble (v.$bubble);
 
-		~ .aquarium__abyss {
-			opacity:1;
-			transition:opacity 14800ms 250ms;
+		//FISH PLUNGE VITESSE
+		~ .fish__box {
+
+			> .fish {
+				//animation-play-state:paused;
+				//animation:anim-fish__abysse 14000ms 150ms v.$cubic-rebond forwards;
+				transform:translateY(-140vh) scale(0.2) scaleY(8);
+				transition:all 10500ms 100ms v.$cubic-plunge;
+			}
 		}
+
+
 	}
 
 	&:active {
@@ -109,6 +123,17 @@
 
 }
 
+@keyframes anim-fish__abysse {
+	5% {
+		transform:scaleX(0.5);
+	}
+	15% {
+		transform:scaleY(10);
+	}
+	100% {
+		top:-50%;
+	}
+}
 
 @keyframes anim-button__appear {
 	0% {

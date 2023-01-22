@@ -49,13 +49,16 @@ $percentage-fish2:random(60);
 $cubic-rebond: cubic-bezier(0.68, -0.55, 0.38, 1.55);
 $cubic-rebond--ease:cubic-bezier(.99,-0.22,.27,1.19);
 $cubic-bubble:cubic-bezier(.99,-0.11,1,1.5);
+$cubic-plunge:cubic-bezier(.36,-0.26,0,1.91);
+$cubic-surface:cubic-bezier(.69,1.05,.79,1.05);
 
 //FISH
 $fish :(
 	xxs:(
 		width:4px,
 		height:2px,
-		anim-duration:calc(random(10000) + 20000)+ms,
+		top:percentage(calc(random(97)/100)),
+		anim-duration:calc(random(30000) + 20000)+ms,
 		anim-delay:random(25000)+ms,
 		anim-type:normal,
 		couleur:25%,
@@ -63,7 +66,8 @@ $fish :(
 	xs:(
 		width:5px,
 		height:2px,
-		anim-duration:calc(random(10000) + 18000)+ms,
+		top:percentage(calc(random(97)/100)),
+		anim-duration:calc(random(28000) + 18000)+ms,
 		anim-delay:random(30000)+ms,
 		anim-type:reverse,
 		couleur:20%,
@@ -71,7 +75,8 @@ $fish :(
 	s:(
 		width:6px,
 		height:3px,
-		anim-duration:calc(random(10000) + 17000)+ms,
+		top:percentage(calc(random(97)/100)),
+		anim-duration:calc(random(24000) + 17000)+ms,
 		anim-delay:random(35000)+ms,
 		anim-type:normal,
 		couleur:15%,
@@ -79,7 +84,8 @@ $fish :(
 	m:(
 		width:10px,
 		height:5px,
-		anim-duration:calc(random(10000) + 15000)+ms,
+		top:percentage(calc(random(97)/100)),
+		anim-duration:calc(random(18000) + 15000)+ms,
 		anim-delay:random(40000)+ms,
 		anim-type:normal,
 		couleur:12%,
@@ -87,7 +93,8 @@ $fish :(
 	l:(
 		width:12px,
 		height:6px,
-		anim-duration:calc(random(10000) + 12000)+ms,
+		top:percentage(calc(random(97)/100)),
+		anim-duration:calc(random(12000) + 12000)+ms,
 		anim-delay:random(40000)+ms,
 		anim-type:reverse,
 		couleur:10%,
@@ -95,6 +102,7 @@ $fish :(
 	xl:(
 		width:14px,
 		height:8px,
+		top:percentage(calc(random(97)/100)),
 		anim-duration:calc(random(10000) + 10000)+ms,
 		anim-delay:random(45000)+ms,
 		anim-type:normal,
@@ -103,6 +111,7 @@ $fish :(
 	xxl:(
 		width:16px,
 		height:8px,
+		top:percentage(calc(random(97)/100)),
 		anim-duration:calc(random(10000) + 9000)+ms,
 		anim-delay:random(45000)+ms,
 		anim-type:reverse,
