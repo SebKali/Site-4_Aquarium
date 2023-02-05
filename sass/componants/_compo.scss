@@ -1,0 +1,39 @@
+
+// BUBBLE
+
+@use "./../abstract/_variables.scss" as v;
+@use "./../abstract/_mixins.scss" as m;
+
+
+//BUBBLE BASE
+.bubble {
+	opacity:0;
+	background:transparent;
+	border:1px solid v.$color-bubble;
+	position:absolute;
+	border-radius:20px;
+
+	@include m.bubble-generator (v.$bubble);
+}
+
+//FISH BASE
+.fish {
+
+	background:v.$color-bg;
+	border-radius:3px;
+	box-shadow:4px 4px 15px rgba(0,0,0,0.1); 
+	@include m.pos-absolute-0;	
+	transition:all 3900ms 100ms v.$cubic-surface;
+
+	@include m.fish-generator (v.$fish);
+}
+
+//SPEED BASE
+.speed {
+	background:v.$color-bg;
+	position:absolute;
+	transition:all 1200ms 100ms ease-in;
+
+	@include m.speed-generator (v.$speed);
+}
+

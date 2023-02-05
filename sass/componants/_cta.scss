@@ -69,7 +69,7 @@
 		// COULEUR PLONGEE
 		~ .aquarium__abyss {
 			opacity:1;
-			transition:opacity 5500ms 250ms v.$cubic-rebond--ease;
+			transition:opacity 6900ms 50ms v.$cubic-rebond--ease;
 		}
 
 		&::before {
@@ -101,6 +101,15 @@
 				//animation:anim-fish__abysse 14000ms 150ms v.$cubic-rebond forwards;
 				transform:translateY(-140vh) scale(0.2) scaleY(8);
 				transition:all 10500ms 100ms v.$cubic-plunge;
+			}
+		}
+
+		~ .speed__box {
+
+			> .speed {
+				transform:translateY(-270vh);
+				opacity:1;
+				transition:all 2200ms 2400ms ease-in;
 			}
 		}
 

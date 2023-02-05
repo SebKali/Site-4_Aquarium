@@ -88,6 +88,19 @@
 	}
 }
 
+//SPEED GENERATOR
+@mixin speed-generator ($speed) {
+	@each $nom, $valeur in v.$speed {
+		&--#{$nom} {
+			width:map-get($valeur, width);
+			height:map-get($valeur, height);
+			top:map-get($valeur, top-start);
+			left:map-get($valeur, left-start);
+			opacity:map-get($valeur, opacity);
+		}
+	}
+}
+
 
 // MIXIN @MEDIA BREAKPOINT
 @mixin mobile {
