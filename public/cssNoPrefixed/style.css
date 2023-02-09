@@ -54,7 +54,7 @@ body {
   width: 8px;
   height: 8px;
   top: 62%;
-  left: 43%;
+  left: 49%;
 }
 .bubble--xs {
   width: 10px;
@@ -66,31 +66,31 @@ body {
   width: 12px;
   height: 12px;
   top: 61%;
-  left: 54%;
+  left: 41%;
 }
 .bubble--m {
   width: 15px;
   height: 15px;
   top: 60%;
-  left: 50%;
+  left: 58%;
 }
 .bubble--l {
   width: 18px;
   height: 18px;
   top: 65%;
-  left: 59%;
+  left: 47%;
 }
 .bubble--xl {
   width: 22px;
   height: 22px;
   top: 65%;
-  left: 52%;
+  left: 56%;
 }
 .bubble--xxl {
   width: 25px;
   height: 25px;
   top: 62.5%;
-  left: 50%;
+  left: 53%;
 }
 
 .fish {
@@ -108,60 +108,60 @@ body {
   background: #d5a662;
   width: 4px;
   height: 2px;
-  top: 75%;
+  top: 68%;
   left: -4px;
-  animation: fish-anim 35847ms 17232ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 26045ms 3814ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--xs {
   background: #dab177;
   width: 5px;
   height: 2px;
-  top: 27%;
+  top: 2%;
   left: -5px;
-  animation: fish-anim 26685ms 22023ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 31841ms 9606ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--s {
   background: #e0bd8b;
   width: 6px;
   height: 3px;
-  top: 75%;
+  top: 66%;
   left: -6px;
-  animation: fish-anim 37786ms 34096ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 28042ms 616ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--m {
   background: #e3c397;
   width: 10px;
   height: 5px;
-  top: 67%;
+  top: 46%;
   left: -10px;
-  animation: fish-anim 19068ms 23892ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 27349ms 38084ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--l {
   background: #e5c89f;
   width: 12px;
   height: 6px;
-  top: 59%;
+  top: 48%;
   left: -12px;
-  animation: fish-anim 20573ms 27797ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 23109ms 35092ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--xl {
   background: #e7cda7;
   width: 14px;
   height: 8px;
-  top: 34%;
+  top: 30%;
   left: -14px;
-  animation: fish-anim 15209ms 28719ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 11991ms 44548ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--xxl {
   background: #ebd4b3;
   width: 16px;
   height: 8px;
-  top: 47%;
+  top: 4%;
   left: -16px;
-  animation: fish-anim 11211ms 43889ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 16705ms 37178ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 @keyframes fish-anim {
-  79%, 100% {
+  76%, 100% {
     left: 110%;
   }
 }
@@ -233,6 +233,18 @@ body {
   top: 160%;
   left: 91%;
   opacity: 1;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background: transparent;
+  border-radius: 10px;
+  border: 2px solid #E8D5B5;
+  opacity: 0.65;
 }
 
 .button {
@@ -308,11 +320,11 @@ body {
   }
   50% {
     opacity: 1;
-    left: 44%;
+    left: 50%;
   }
   75% {
     opacity: 1;
-    left: 42%;
+    left: 48%;
   }
   100% {
     opacity: 0;
@@ -354,11 +366,11 @@ body {
   }
   50% {
     opacity: 1;
-    left: 54.5%;
+    left: 41.5%;
   }
   75% {
     opacity: 1;
-    left: 53.5%;
+    left: 40.5%;
   }
   100% {
     opacity: 0;
@@ -377,11 +389,11 @@ body {
   }
   50% {
     opacity: 1;
-    left: 51.2%;
+    left: 59.2%;
   }
   75% {
     opacity: 1;
-    left: 48.8%;
+    left: 56.8%;
   }
   100% {
     opacity: 0;
@@ -400,11 +412,11 @@ body {
   }
   50% {
     opacity: 1;
-    left: 60.1%;
+    left: 48.1%;
   }
   75% {
     opacity: 1;
-    left: 57.9%;
+    left: 45.9%;
   }
   100% {
     opacity: 0;
@@ -423,11 +435,11 @@ body {
   }
   50% {
     opacity: 1;
-    left: 53%;
+    left: 57%;
   }
   75% {
     opacity: 1;
-    left: 51%;
+    left: 55%;
   }
   100% {
     opacity: 0;
@@ -446,11 +458,11 @@ body {
   }
   50% {
     opacity: 1;
-    left: 50.8%;
+    left: 53.8%;
   }
   75% {
     opacity: 1;
-    left: 49.2%;
+    left: 52.2%;
   }
   100% {
     opacity: 0;
