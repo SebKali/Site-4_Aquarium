@@ -1,0 +1,69 @@
+
+//MENU 
+
+@use "./../abstract/_variables.scss" as v;
+@use "./../abstract/_mixins.scss" as m;
+
+
+.menu {
+
+	//LAYOUT
+	width:50px;
+	height:50px;
+	position:absolute;
+	top:30px;
+	left:30px;
+	border-radius:10px;
+
+	//PAINT
+	background:transparent;
+	border:1px solid v.$ivoire-jaune;
+
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	z-index:2;
+	cursor:pointer;
+
+	//ANIMATION
+	animation:anim-button__appear 11s 2s backwards v.$cubic-rebond, anim-button__opacity 10s 13s v.$cubic-rebond alternate infinite;
+	
+	&:hover {
+		transform:rotate(360deg);
+		transition:1400ms 150ms v.$cubic-rebond;
+	}
+
+	&__circle {
+
+		//LAYOUT
+		width:5px;
+		height:5px;
+		border-radius:20px;
+
+		//PAINT
+		border:1px solid v.$ivoire-jaune;
+
+		//ANIMATION
+		animation: anim-circle 3s linear infinite forwards; 
+	}
+
+}
+
+
+@keyframes anim-circle {
+
+	from {
+		opacity:0;
+	}
+	5%, 30% {
+		opacity:0.5;
+	}
+	10%, 25% {
+		opacity:1;
+	}
+	35%, 100% {
+		opacity:0;
+		width:30px;
+		height:30px;
+	}
+}

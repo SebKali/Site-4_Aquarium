@@ -54,43 +54,43 @@ body {
   width: 8px;
   height: 8px;
   top: 62%;
-  left: 49%;
+  left: 41%;
 }
 .bubble--xs {
   width: 10px;
   height: 10px;
   top: 64%;
-  left: 42%;
+  left: 51%;
 }
 .bubble--s {
   width: 12px;
   height: 12px;
   top: 61%;
-  left: 41%;
+  left: 45%;
 }
 .bubble--m {
   width: 15px;
   height: 15px;
   top: 60%;
-  left: 58%;
+  left: 51%;
 }
 .bubble--l {
   width: 18px;
   height: 18px;
   top: 65%;
-  left: 47%;
+  left: 49%;
 }
 .bubble--xl {
   width: 22px;
   height: 22px;
   top: 65%;
-  left: 56%;
+  left: 44%;
 }
 .bubble--xxl {
   width: 25px;
   height: 25px;
   top: 62.5%;
-  left: 53%;
+  left: 57%;
 }
 
 .fish {
@@ -108,60 +108,60 @@ body {
   background: #d5a662;
   width: 4px;
   height: 2px;
-  top: 68%;
+  top: 78%;
   left: -4px;
-  animation: fish-anim 26045ms 3814ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 48610ms 20806ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--xs {
   background: #dab177;
   width: 5px;
   height: 2px;
-  top: 2%;
+  top: 62%;
   left: -5px;
-  animation: fish-anim 31841ms 9606ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 43734ms 27648ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--s {
   background: #e0bd8b;
   width: 6px;
   height: 3px;
-  top: 66%;
+  top: 91%;
   left: -6px;
-  animation: fish-anim 28042ms 616ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 33161ms 10864ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--m {
   background: #e3c397;
   width: 10px;
   height: 5px;
-  top: 46%;
+  top: 88%;
   left: -10px;
-  animation: fish-anim 27349ms 38084ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 16545ms 15406ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--l {
   background: #e5c89f;
   width: 12px;
   height: 6px;
-  top: 48%;
+  top: 14%;
   left: -12px;
-  animation: fish-anim 23109ms 35092ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 22170ms 20853ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--xl {
   background: #e7cda7;
   width: 14px;
   height: 8px;
-  top: 30%;
+  top: 95%;
   left: -14px;
-  animation: fish-anim 11991ms 44548ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 16692ms 35305ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--xxl {
   background: #ebd4b3;
   width: 16px;
   height: 8px;
-  top: 4%;
+  top: 43%;
   left: -16px;
-  animation: fish-anim 16705ms 37178ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 14994ms 12143ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 @keyframes fish-anim {
-  76%, 100% {
+  87%, 100% {
     left: 110%;
   }
 }
@@ -233,18 +233,6 @@ body {
   top: 160%;
   left: 91%;
   opacity: 1;
-}
-
-.square {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  background: transparent;
-  border-radius: 10px;
-  border: 2px solid #E8D5B5;
-  opacity: 0.65;
 }
 
 .button {
@@ -320,11 +308,11 @@ body {
   }
   50% {
     opacity: 1;
-    left: 50%;
+    left: 42%;
   }
   75% {
     opacity: 1;
-    left: 48%;
+    left: 40%;
   }
   100% {
     opacity: 0;
@@ -343,11 +331,11 @@ body {
   }
   50% {
     opacity: 1;
-    left: 43.4%;
+    left: 52.4%;
   }
   75% {
     opacity: 1;
-    left: 40.6%;
+    left: 49.6%;
   }
   100% {
     opacity: 0;
@@ -366,11 +354,11 @@ body {
   }
   50% {
     opacity: 1;
-    left: 41.5%;
+    left: 45.5%;
   }
   75% {
     opacity: 1;
-    left: 40.5%;
+    left: 44.5%;
   }
   100% {
     opacity: 0;
@@ -389,11 +377,11 @@ body {
   }
   50% {
     opacity: 1;
-    left: 59.2%;
+    left: 52.2%;
   }
   75% {
     opacity: 1;
-    left: 56.8%;
+    left: 49.8%;
   }
   100% {
     opacity: 0;
@@ -412,11 +400,11 @@ body {
   }
   50% {
     opacity: 1;
-    left: 48.1%;
+    left: 50.1%;
   }
   75% {
     opacity: 1;
-    left: 45.9%;
+    left: 47.9%;
   }
   100% {
     opacity: 0;
@@ -435,11 +423,11 @@ body {
   }
   50% {
     opacity: 1;
-    left: 57%;
+    left: 45%;
   }
   75% {
     opacity: 1;
-    left: 55%;
+    left: 43%;
   }
   100% {
     opacity: 0;
@@ -458,11 +446,11 @@ body {
   }
   50% {
     opacity: 1;
-    left: 53.8%;
+    left: 57.8%;
   }
   75% {
     opacity: 1;
-    left: 52.2%;
+    left: 56.2%;
   }
   100% {
     opacity: 0;
@@ -528,6 +516,50 @@ body {
   }
   to {
     transform: translate(-20.9rem, 0rem);
+  }
+}
+.menu {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid #E8D5B5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  cursor: pointer;
+  animation: anim-button__appear 11s 2s backwards cubic-bezier(0.68, -0.55, 0.38, 1.55), anim-button__opacity 10s 13s cubic-bezier(0.68, -0.55, 0.38, 1.55) alternate infinite;
+}
+.menu:hover {
+  transform: rotate(360deg);
+  transition: 1400ms 150ms cubic-bezier(0.68, -0.55, 0.38, 1.55);
+}
+.menu__circle {
+  width: 5px;
+  height: 5px;
+  border-radius: 20px;
+  border: 1px solid #E8D5B5;
+  animation: anim-circle 3s linear infinite forwards;
+}
+
+@keyframes anim-circle {
+  from {
+    opacity: 0;
+  }
+  5%, 30% {
+    opacity: 0.5;
+  }
+  10%, 25% {
+    opacity: 1;
+  }
+  35%, 100% {
+    opacity: 0;
+    width: 30px;
+    height: 30px;
   }
 }
 .aquarium {
