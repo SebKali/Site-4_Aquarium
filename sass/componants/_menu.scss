@@ -7,57 +7,66 @@
 
 .menu {
 
-	//LAYOUT
-	width:50px;
-	height:50px;
-	position:absolute;
-	top:30px;
-	left:30px;
-	border-radius:10px;
-
-	//PAINT
-	background:transparent;
-	border:1px solid v.$ivoire-jaune;
-
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	z-index:2;
-	cursor:pointer;
-
-	//ANIMATION
-	opacity:1;
-	animation:anim-button__appear 11s 2s backwards v.$cubic-rebond; //, anim-button__opacity 10s 13s v.$cubic-rebond alternate infinite;
-
-	&::before {
-		content:"";
-		position:absolute;
-		z-index:2;
+	&__cta {
 
 		//LAYOUT
-		height:100%;
-		width:100%;
+		width:v.$menu-dim;
+		height:v.$menu-dim;
+		position:absolute;
+		top:v.$menu-top;
+		left:v.$menu-left;
 		border-radius:10px;
 
 		//PAINT
-		background:v.$ivoire-jaune;
+		background:transparent;
 		border:1px solid v.$ivoire-jaune;
 
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		z-index:2;
+		cursor:pointer;
+
 		//ANIMATION
-		opacity:0;
-		transition:opacity 550ms 700ms ease-in-out;
-	}
-	
-	&:hover {
-		transform:rotate(360deg);
-		transition:transform 1400ms 150ms v.$cubic-rebond;
+		opacity:1;
+		animation:anim-button__appear 11s 2s backwards v.$cubic-rebond; //, anim-button__opacity 10s 13s v.$cubic-rebond alternate infinite;
+		transition:transform 1400ms 80ms v.$cubic-rebond; // Match avec le transforme de .menu dans _menu.scss
 
 		&::before {
-			opacity:1;
-		}
+			content:"";
+			position:absolute;
+			z-index:2;
 
-		> .menu__circle {
-			border:1px solid v.$bleu-inter; 
+			//LAYOUT
+			height:100%;
+			width:100%;
+			border-radius:10px;
+
+			//PAINT
+			background:v.$ivoire-jaune;
+			border:1px solid v.$ivoire-jaune;
+
+			//ANIMATION
+			opacity:0;
+			transition:opacity 550ms 700ms ease-in-out;
+		}
+	
+		&:hover {
+			transform:rotate(360deg);
+			transition:transform 1400ms 80ms v.$cubic-rebond;
+
+			&::before {
+				opacity:1;
+			}
+
+			> .menu__circle {
+				border:1px solid v.$bleu-inter; 
+				animation: anim-circle 900ms linear infinite forwards;
+			}
+
+			~ .menu__box > .menu__box__texte {
+				transform:translateX(v.$menu-dim*4); //Prend la transition associée au :hover
+			}
 		}
 	}
 
@@ -74,10 +83,32 @@
 		transition:border 800ms 750ms;
 
 		//ANIMATION
-		animation: anim-circle 3s linear infinite forwards;
-			
+		animation: anim-circle 2200ms linear infinite forwards;
 	}
 
+	&__box {
+		overflow:hidden;
+
+		//LAYOUT
+		width:v.$menu-dim * 4;
+		height:v.$menu-dim;
+		position:absolute;
+		top:v.$menu-top;
+		left:v.$menu-left+v.$menu-dim+10px;
+
+		//PAINT
+
+		display:flex;
+		align-items:center;
+
+		&__texte {
+			position:absolute;
+			left:-4*v.$menu-dim;
+
+			//ANIMATION
+			transition:transform 1400ms 100ms v.$cubic-rebond;
+		}
+	}
 }
 
 

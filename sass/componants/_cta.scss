@@ -71,6 +71,12 @@
 			transition:opacity 6900ms 50ms v.$cubic-rebond--ease;
 		}
 
+		~ .menu > .menu__cta {
+			transform:translateY(20px);
+			transition:transform 2750ms 2100ms v.$cubic-menu; //.$cubic-rebond--ease; // Match avec le transforme de .menu dans -menu.scss
+
+		}
+
 		&::before {
 			border-radius:0;
 			top:0;
@@ -111,8 +117,6 @@
 				transition:all 2200ms 2400ms ease-in;
 			}
 		}
-
-
 	}
 
 	&:active {

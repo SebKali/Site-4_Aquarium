@@ -54,43 +54,43 @@ body {
   width: 8px;
   height: 8px;
   top: 62%;
-  left: 44%;
+  left: 52%;
 }
 .bubble--xs {
   width: 10px;
   height: 10px;
   top: 64%;
-  left: 50%;
+  left: 52%;
 }
 .bubble--s {
   width: 12px;
   height: 12px;
   top: 61%;
-  left: 47%;
+  left: 49%;
 }
 .bubble--m {
   width: 15px;
   height: 15px;
   top: 60%;
-  left: 54%;
+  left: 48%;
 }
 .bubble--l {
   width: 18px;
   height: 18px;
   top: 65%;
-  left: 47%;
+  left: 52%;
 }
 .bubble--xl {
   width: 22px;
   height: 22px;
   top: 65%;
-  left: 57%;
+  left: 51%;
 }
 .bubble--xxl {
   width: 25px;
   height: 25px;
   top: 62.5%;
-  left: 55%;
+  left: 50%;
 }
 
 .fish {
@@ -108,60 +108,60 @@ body {
   background: #d5a662;
   width: 4px;
   height: 2px;
-  top: 75%;
+  top: 31%;
   left: -4px;
-  animation: fish-anim 37622ms 17962ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 39402ms 10980ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--xs {
   background: #dab177;
   width: 5px;
   height: 2px;
-  top: 56%;
+  top: 83%;
   left: -5px;
-  animation: fish-anim 42548ms 26937ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 38665ms 5920ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--s {
   background: #e0bd8b;
   width: 6px;
   height: 3px;
-  top: 88%;
+  top: 46%;
   left: -6px;
-  animation: fish-anim 24147ms 5883ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 27327ms 16891ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--m {
   background: #e3c397;
   width: 10px;
   height: 5px;
-  top: 81%;
+  top: 54%;
   left: -10px;
-  animation: fish-anim 21493ms 10979ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 24374ms 4307ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--l {
   background: #e5c89f;
   width: 12px;
   height: 6px;
-  top: 19%;
+  top: 87%;
   left: -12px;
-  animation: fish-anim 19141ms 1220ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 14046ms 31703ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--xl {
   background: #e7cda7;
   width: 14px;
   height: 8px;
-  top: 22%;
+  top: 36%;
   left: -14px;
-  animation: fish-anim 19078ms 31664ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 18894ms 27892ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--xxl {
   background: #ebd4b3;
   width: 16px;
   height: 8px;
-  top: 66%;
+  top: 47%;
   left: -16px;
-  animation: fish-anim 18626ms 33497ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 14207ms 12095ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 @keyframes fish-anim {
-  87%, 100% {
+  81%, 100% {
     left: 110%;
   }
 }
@@ -280,6 +280,10 @@ body {
   opacity: 1;
   transition: opacity 6900ms 50ms cubic-bezier(0.99, -0.22, 0.27, 1.19);
 }
+.button:hover ~ .menu > .menu__cta {
+  transform: translateY(20px);
+  transition: transform 2750ms 2100ms cubic-bezier(0.42, -0.24, 0.71, 1.26);
+}
 .button:hover::before {
   border-radius: 0;
   top: 0;
@@ -308,11 +312,11 @@ body {
   }
   50% {
     opacity: 1;
-    left: 45%;
+    left: 53%;
   }
   75% {
     opacity: 1;
-    left: 43%;
+    left: 51%;
   }
   100% {
     opacity: 0;
@@ -331,11 +335,11 @@ body {
   }
   50% {
     opacity: 1;
-    left: 51.4%;
+    left: 53.4%;
   }
   75% {
     opacity: 1;
-    left: 48.6%;
+    left: 50.6%;
   }
   100% {
     opacity: 0;
@@ -354,11 +358,11 @@ body {
   }
   50% {
     opacity: 1;
-    left: 47.5%;
+    left: 49.5%;
   }
   75% {
     opacity: 1;
-    left: 46.5%;
+    left: 48.5%;
   }
   100% {
     opacity: 0;
@@ -377,11 +381,11 @@ body {
   }
   50% {
     opacity: 1;
-    left: 55.2%;
+    left: 49.2%;
   }
   75% {
     opacity: 1;
-    left: 52.8%;
+    left: 46.8%;
   }
   100% {
     opacity: 0;
@@ -400,11 +404,11 @@ body {
   }
   50% {
     opacity: 1;
-    left: 48.1%;
+    left: 53.1%;
   }
   75% {
     opacity: 1;
-    left: 45.9%;
+    left: 50.9%;
   }
   100% {
     opacity: 0;
@@ -423,11 +427,11 @@ body {
   }
   50% {
     opacity: 1;
-    left: 58%;
+    left: 52%;
   }
   75% {
     opacity: 1;
-    left: 56%;
+    left: 50%;
   }
   100% {
     opacity: 0;
@@ -446,11 +450,11 @@ body {
   }
   50% {
     opacity: 1;
-    left: 55.8%;
+    left: 50.8%;
   }
   75% {
     opacity: 1;
-    left: 54.2%;
+    left: 49.2%;
   }
   100% {
     opacity: 0;
@@ -518,7 +522,7 @@ body {
     transform: translate(-20.9rem, 0rem);
   }
 }
-.menu {
+.menu__cta {
   width: 50px;
   height: 50px;
   position: absolute;
@@ -534,8 +538,9 @@ body {
   cursor: pointer;
   opacity: 1;
   animation: anim-button__appear 11s 2s backwards cubic-bezier(0.68, -0.55, 0.38, 1.55);
+  transition: transform 1400ms 80ms cubic-bezier(0.68, -0.55, 0.38, 1.55);
 }
-.menu::before {
+.menu__cta::before {
   content: "";
   position: absolute;
   z-index: 2;
@@ -547,15 +552,19 @@ body {
   opacity: 0;
   transition: opacity 550ms 700ms ease-in-out;
 }
-.menu:hover {
+.menu__cta:hover {
   transform: rotate(360deg);
-  transition: transform 1400ms 150ms cubic-bezier(0.68, -0.55, 0.38, 1.55);
+  transition: transform 1400ms 80ms cubic-bezier(0.68, -0.55, 0.38, 1.55);
 }
-.menu:hover::before {
+.menu__cta:hover::before {
   opacity: 1;
 }
-.menu:hover > .menu__circle {
+.menu__cta:hover > .menu__circle {
   border: 1px solid #090979;
+  animation: anim-circle 900ms linear infinite forwards;
+}
+.menu__cta:hover ~ .menu__box > .menu__box__texte {
+  transform: translateX(200px);
 }
 .menu__circle {
   width: 5px;
@@ -564,7 +573,22 @@ body {
   z-index: 2;
   border: 1px solid #E8D5B5;
   transition: border 800ms 750ms;
-  animation: anim-circle 3s linear infinite forwards;
+  animation: anim-circle 2200ms linear infinite forwards;
+}
+.menu__box {
+  overflow: hidden;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  top: 30px;
+  left: 90px;
+  display: flex;
+  align-items: center;
+}
+.menu__box__texte {
+  position: absolute;
+  left: -200px;
+  transition: transform 1400ms 100ms cubic-bezier(0.68, -0.55, 0.38, 1.55);
 }
 
 @keyframes anim-circle {
