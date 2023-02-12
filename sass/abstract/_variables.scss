@@ -126,20 +126,20 @@ $bubble :(
 	xxs:(
 		width:8px,
 		height:8px,
-		anim-duration:3000ms,
+		anim-duration:6000ms,
 		anim-delay:850ms,
 		top-start:62%,
-		top-delta:28%,
+		top-delta:48%,
 		left-start:percentage(calc((60 - random(20))/100)),
 		left-delta:1%,
 		),
 	xs:(
 		width:10px,
 		height:10px,
-		anim-duration:4000ms,
+		anim-duration:7000ms,
 		anim-delay:740ms,
 		top-start:64%,
-		top-delta:26%,
+		top-delta:41%,
 		left-start:percentage(calc((60 - random(20))/100)),
 		left-delta:1.4%,
 
@@ -147,10 +147,10 @@ $bubble :(
 	s:(
 		width:12px,
 		height:12px,
-		anim-duration:3500ms,
+		anim-duration:5500ms,
 		anim-delay:1040ms,
 		top-start:61%,
-		top-delta:22%,
+		top-delta:52%,
 		left-start:percentage(calc((60 - random(20))/100)),
 		left-delta:0.5%,
 
@@ -158,20 +158,20 @@ $bubble :(
 	m:(
 		width:15px,
 		height:15px,
-		anim-duration:4000ms,
+		anim-duration:6000ms,
 		anim-delay:1080ms,
 		top-start:60%,
-		top-delta:25%,
+		top-delta:45%,
 		left-start:percentage(calc((60 - random(20))/100)),
 		left-delta:1.2%,
 		),
 	l:(
 		width:18px,
 		height:18px,
-		anim-duration:2500ms,
+		anim-duration:4500ms,
 		anim-delay:810ms,
 		top-start:65%,
-		top-delta:18%,
+		top-delta:38%,
 		left-start:percentage(calc((60 - random(20))/100)),
 		left-delta:1.1%,
 
@@ -179,10 +179,10 @@ $bubble :(
 	xl:(
 		width:22px,
 		height:22px,
-		anim-duration:3200ms,
+		anim-duration:5200ms,
 		anim-delay:720ms,
 		top-start:65%,
-		top-delta:19%,
+		top-delta:39%,
 		left-start:percentage(calc((60 - random(20))/100)),
 		left-delta:1%,
 
@@ -190,10 +190,10 @@ $bubble :(
 	xxl:(
 		width:25px,
 		height:25px,
-		anim-duration:4400ms,
+		anim-duration:6400ms,
 		anim-delay:680ms,
 		top-start:62.5%,
-		top-delta:16%,
+		top-delta:51%,
 		left-start:percentage(calc((60 - random(20))/100)),
 		left-delta:0.8%,
 

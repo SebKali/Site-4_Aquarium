@@ -26,11 +26,39 @@
 	cursor:pointer;
 
 	//ANIMATION
-	animation:anim-button__appear 11s 2s backwards v.$cubic-rebond, anim-button__opacity 10s 13s v.$cubic-rebond alternate infinite;
+	opacity:1;
+	animation:anim-button__appear 11s 2s backwards v.$cubic-rebond; //, anim-button__opacity 10s 13s v.$cubic-rebond alternate infinite;
+
+	&::before {
+		content:"";
+		position:absolute;
+		z-index:2;
+
+		//LAYOUT
+		height:100%;
+		width:100%;
+		border-radius:10px;
+
+		//PAINT
+		background:v.$ivoire-jaune;
+		border:1px solid v.$ivoire-jaune;
+
+		//ANIMATION
+		opacity:0;
+		transition:opacity 550ms 700ms ease-in-out;
+	}
 	
 	&:hover {
 		transform:rotate(360deg);
-		transition:1400ms 150ms v.$cubic-rebond;
+		transition:transform 1400ms 150ms v.$cubic-rebond;
+
+		&::before {
+			opacity:1;
+		}
+
+		> .menu__circle {
+			border:1px solid v.$bleu-inter; 
+		}
 	}
 
 	&__circle {
@@ -39,12 +67,15 @@
 		width:5px;
 		height:5px;
 		border-radius:20px;
+		z-index:2;
 
 		//PAINT
 		border:1px solid v.$ivoire-jaune;
+		transition:border 800ms 750ms;
 
 		//ANIMATION
-		animation: anim-circle 3s linear infinite forwards; 
+		animation: anim-circle 3s linear infinite forwards;
+			
 	}
 
 }
