@@ -17,3 +17,12 @@ body {
 	font-style:normal;
 	letter-spacing:0.2rem;
 }
+
+.menu__box__texte {
+	font-size:map-get(v.$font-size, menu);
+	color:v.$ivoire-jaune;
+	font-weight:300;
+	font-style:normal;
+	letter-spacing:0.1rem;
+}
+

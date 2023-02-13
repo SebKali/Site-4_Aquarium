@@ -67,6 +67,14 @@
 			~ .menu__box > .menu__box__texte {
 				transform:translateX(v.$menu-dim*4); //Prend la transition associée au :hover
 			}
+
+			~ .menu__box > .menu__barre--top {
+				transform:translateX(v.$menu-dim*4); //Prend la transition associée au :hover
+			}
+
+			~ .menu__box > .menu__barre--bot {
+				transform:translateX(v.$menu-dim*-4 - 15px);
+			}
 		}
 	}
 
@@ -90,7 +98,7 @@
 		overflow:hidden;
 
 		//LAYOUT
-		width:v.$menu-dim * 4;
+		width:v.$menu-dim * 4 + 15px;
 		height:v.$menu-dim;
 		position:absolute;
 		top:v.$menu-top;
@@ -99,7 +107,8 @@
 		//PAINT
 
 		display:flex;
-		align-items:center;
+		flex-direction:column;
+		justify-content:space-around;
 
 		&__texte {
 			position:absolute;
@@ -107,6 +116,26 @@
 
 			//ANIMATION
 			transition:transform 1400ms 100ms v.$cubic-rebond;
+		}
+	}
+
+	&__barre {
+		width:v.$menu-dim * 4;
+		height:1px;
+		background:v.$ivoire-jaune;
+		position:absolute;
+		transition:transform 1400ms 100ms v.$cubic-rebond;
+
+		&--top {
+			left:-4*v.$menu-dim;
+			top:5%;
+			transition:transform 1400ms 40ms v.$cubic-rebond;
+		}
+
+		&--bot {
+			left:4*v.$menu-dim + 15px;
+			top:95%;
+			transition:transform 1400ms 170ms v.$cubic-rebond;
 		}
 	}
 }
