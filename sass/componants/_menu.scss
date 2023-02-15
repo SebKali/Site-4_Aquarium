@@ -64,17 +64,39 @@
 				animation: anim-circle 900ms linear infinite forwards;
 			}
 
-			~ .menu__box > .menu__box__texte {
-				transform:translateX(v.$menu-dim*4); //Prend la transition associée au :hover
-			}
+			~ .menu__box {
 
-			~ .menu__box > .menu__barre--top {
+				> .menu__box__texte {
 				transform:translateX(v.$menu-dim*4); //Prend la transition associée au :hover
-			}
+				}
 
-			~ .menu__box > .menu__barre--bot {
+				> .menu__barre--top {
+				transform:translateX(v.$menu-dim*4); //Prend la transition associée au :hover
+				}
+
+				> .menu__barre--bot {
 				transform:translateX(v.$menu-dim*-4 - 15px);
+				}
 			}
+
+			~ .animal {
+
+				> .animal__image {
+					width:550px;
+					border:1px solid v.$ivoire-jaune;
+					//transform:translateX(-40px);
+					animation:anim-animal__image 7s 1000ms alternate linear infinite;
+				}
+
+				> .animal__desc {
+					opacity:1;
+					height:600px;
+					border:1px solid v.$bleu-abysse;
+					//transform:translateY(20px);
+					animation:anim-animal__desc 12s 500ms alternate linear infinite;
+				}
+			}
+
 		}
 	}
 

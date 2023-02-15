@@ -62,7 +62,7 @@ body {
   width: 8px;
   height: 8px;
   top: 62%;
-  left: 42%;
+  left: 58%;
 }
 .bubble--xs {
   width: 10px;
@@ -74,31 +74,31 @@ body {
   width: 12px;
   height: 12px;
   top: 61%;
-  left: 55%;
+  left: 57%;
 }
 .bubble--m {
   width: 15px;
   height: 15px;
   top: 60%;
-  left: 59%;
+  left: 52%;
 }
 .bubble--l {
   width: 18px;
   height: 18px;
   top: 65%;
-  left: 47%;
+  left: 52%;
 }
 .bubble--xl {
   width: 22px;
   height: 22px;
   top: 65%;
-  left: 47%;
+  left: 42%;
 }
 .bubble--xxl {
   width: 25px;
   height: 25px;
   top: 62.5%;
-  left: 48%;
+  left: 44%;
 }
 
 .fish {
@@ -116,60 +116,60 @@ body {
   background: #d5a662;
   width: 4px;
   height: 2px;
-  top: 58%;
+  top: 32%;
   left: -4px;
-  animation: fish-anim 37484ms 16639ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 20756ms 3732ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--xs {
   background: #dab177;
   width: 5px;
   height: 2px;
-  top: 92%;
+  top: 36%;
   left: -5px;
-  animation: fish-anim 33500ms 22766ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 25580ms 15105ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--s {
   background: #e0bd8b;
   width: 6px;
   height: 3px;
-  top: 91%;
+  top: 85%;
   left: -6px;
-  animation: fish-anim 32542ms 8409ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 27981ms 3702ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--m {
   background: #e3c397;
   width: 10px;
   height: 5px;
-  top: 64%;
+  top: 32%;
   left: -10px;
-  animation: fish-anim 20478ms 16660ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 21878ms 22418ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--l {
   background: #e5c89f;
   width: 12px;
   height: 6px;
-  top: 85%;
+  top: 23%;
   left: -12px;
-  animation: fish-anim 15123ms 7193ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 20677ms 10501ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--xl {
   background: #e7cda7;
   width: 14px;
   height: 8px;
-  top: 54%;
+  top: 42%;
   left: -14px;
-  animation: fish-anim 13032ms 21546ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 14297ms 4609ms normal cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 .fish--xxl {
   background: #ebd4b3;
   width: 16px;
   height: 8px;
-  top: 56%;
+  top: 70%;
   left: -16px;
-  animation: fish-anim 17318ms 7021ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
+  animation: fish-anim 17352ms 37682ms reverse cubic-bezier(0.84, 0.74, 0.44, 0.65) infinite;
 }
 @keyframes fish-anim {
-  77%, 100% {
+  81%, 100% {
     left: 110%;
   }
 }
@@ -320,11 +320,11 @@ body {
   }
   50% {
     opacity: 1;
-    left: 43%;
+    left: 59%;
   }
   75% {
     opacity: 1;
-    left: 41%;
+    left: 57%;
   }
   100% {
     opacity: 0;
@@ -366,11 +366,11 @@ body {
   }
   50% {
     opacity: 1;
-    left: 55.5%;
+    left: 57.5%;
   }
   75% {
     opacity: 1;
-    left: 54.5%;
+    left: 56.5%;
   }
   100% {
     opacity: 0;
@@ -389,11 +389,11 @@ body {
   }
   50% {
     opacity: 1;
-    left: 60.2%;
+    left: 53.2%;
   }
   75% {
     opacity: 1;
-    left: 57.8%;
+    left: 50.8%;
   }
   100% {
     opacity: 0;
@@ -412,11 +412,11 @@ body {
   }
   50% {
     opacity: 1;
-    left: 48.1%;
+    left: 53.1%;
   }
   75% {
     opacity: 1;
-    left: 45.9%;
+    left: 50.9%;
   }
   100% {
     opacity: 0;
@@ -435,11 +435,11 @@ body {
   }
   50% {
     opacity: 1;
-    left: 48%;
+    left: 43%;
   }
   75% {
     opacity: 1;
-    left: 46%;
+    left: 41%;
   }
   100% {
     opacity: 0;
@@ -458,11 +458,11 @@ body {
   }
   50% {
     opacity: 1;
-    left: 48.8%;
+    left: 44.8%;
   }
   75% {
     opacity: 1;
-    left: 47.2%;
+    left: 43.2%;
   }
   100% {
     opacity: 0;
@@ -580,6 +580,17 @@ body {
 .menu__cta:hover ~ .menu__box > .menu__barre--bot {
   transform: translateX(-215px);
 }
+.menu__cta:hover ~ .animal > .animal__image {
+  width: 550px;
+  border: 1px solid #E8D5B5;
+  animation: anim-animal__image 7s 1000ms alternate linear infinite;
+}
+.menu__cta:hover ~ .animal > .animal__desc {
+  opacity: 1;
+  height: 600px;
+  border: 1px solid #020024;
+  animation: anim-animal__desc 12s 500ms alternate linear infinite;
+}
 .menu__circle {
   width: 5px;
   height: 5px;
@@ -677,6 +688,57 @@ body {
     opacity: 0;
   }
 }
+.animal__image {
+  height: 600px;
+  position: absolute;
+  top: 8%;
+  left: 22%;
+  z-index: 6;
+  border: 1px solid transparent;
+  object-fit: cover;
+  width: 0;
+  transition: width 800ms 150ms ease-in-out, border 800ms 500ms;
+}
+.animal__desc {
+  width: 500px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  z-index: 5;
+  background: #E8D5B5;
+  opacity: 0;
+  height: 0;
+  transition: height 550ms ease-in-out, border 600ms 400ms, opacity 1200ms;
+}
+
+@keyframes anim-animal__image {
+  25% {
+    transform: translate(-3px, 0);
+  }
+  50% {
+    transform: translate(-5px, 1px);
+  }
+  75% {
+    transform: translate(-2px, 1px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes anim-animal__desc {
+  25% {
+    transform: translate(1px, 4px);
+  }
+  50% {
+    transform: translate(2px, 7px);
+  }
+  75% {
+    transform: translate(1px, 3px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
 /* ABSTRACT */
 /* -------- */
 /* BASE */
@@ -694,5 +756,9 @@ body {
 /* ------------ FISH */
 /* PAGES */
 /* ----- */
+/* THEMES */
+/* ------ */
+/* VENDORS */
+/* ------- */
 
 /*# sourceMappingURL=style.css.map */

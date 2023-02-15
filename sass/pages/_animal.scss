@@ -1,0 +1,80 @@
+
+// ANIMAL PAGES
+
+@use "./../abstract/_variables.scss" as v;
+@use "./../abstract/_mixins.scss" as m;
+
+.animal {
+	
+	&__image {
+		
+		//LAYOUT
+		//width:550px, dans _menu.scss avec l'animation de transition
+		height:600px;
+		position:absolute;
+		top:8%;
+		left:22%;
+		z-index:6;
+
+		//PAINT
+		border:1px solid transparent;
+		object-fit:cover;
+
+		//ANIMATION
+		width:0;
+		transition:width 800ms 150ms ease-in-out, border 800ms 500ms;
+
+	}
+
+	&__desc {
+
+		//LAYOUT
+		width:500px;
+		//height:600px, dans _menu.scss avec l'animation de transition
+		position:absolute;
+		top:10%;
+		left:50%;
+		z-index:5;
+
+		//PAINT
+		background:v.$ivoire-jaune;
+		opacity:0;
+
+		//ANIMATION
+		height:0;
+		transition:height 550ms ease-in-out, border 600ms 400ms, opacity 1200ms;
+	}
+}
+
+@keyframes anim-animal__image {
+	25% {
+		transform:translate(-3px,0);
+	}
+	50% {
+		transform:translate(-5px, 1px);
+	}
+	75% {
+		transform:translate(-2px, 1px);
+	}
+	100% {
+		transform:translate(0,0);
+	}
+}
+
+@keyframes anim-animal__desc {
+	25% {
+		transform:translate(1px,4px);
+	}
+	50% {
+		transform:translate(2px, 7px);
+	}
+	75% {
+		transform:translate(1px, 3px);
+	}
+	100% {
+		transform:translate(0,0);
+	}
+}
+
+
+
