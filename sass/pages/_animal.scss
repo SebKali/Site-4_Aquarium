@@ -37,12 +37,38 @@
 		z-index:5;
 
 		//PAINT
-		background:v.$ivoire-jaune;
+		background:v.$color-menu;
 		opacity:0;
 
 		//ANIMATION
 		height:0;
 		transition:height 550ms ease-in-out, border 600ms 400ms, opacity 1200ms;
+
+		display:flex;
+		justify-content:column;
+
+	}
+
+	&__texte {
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items:flex-start;
+
+		width:200px;
+		margin:auto;
+		position:relative;
+		left:50px;
+
+		&--titre {
+			display:block;
+			margin-bottom:20px;
+		}
+
+		&--desc {
+			margin-bottom:20px;
+		}
+
 	}
 }
 

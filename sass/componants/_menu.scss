@@ -19,7 +19,7 @@
 
 		//PAINT
 		background:transparent;
-		border:1px solid v.$ivoire-jaune;
+		border:1px solid v.$color-menu;
 
 		display:flex;
 		justify-content:center;
@@ -43,8 +43,8 @@
 			border-radius:10px;
 
 			//PAINT
-			background:v.$ivoire-jaune;
-			border:1px solid v.$ivoire-jaune;
+			background:v.$color-menu;
+			border:1px solid v.$color-menu;
 
 			//ANIMATION
 			opacity:0;
@@ -60,7 +60,7 @@
 			}
 
 			> .menu__circle {
-				border:1px solid v.$bleu-inter; 
+				border:1px solid v.$color1; 
 				animation: anim-circle 900ms linear infinite forwards;
 			}
 
@@ -83,7 +83,7 @@
 
 				> .animal__image {
 					width:550px;
-					border:1px solid v.$ivoire-jaune;
+					border:1px solid v.$color-menu;
 					//transform:translateX(-40px);
 					animation:anim-animal__image 7s 1000ms alternate linear infinite;
 				}
@@ -91,7 +91,7 @@
 				> .animal__desc {
 					opacity:1;
 					height:600px;
-					border:1px solid v.$bleu-abysse;
+					border:1px solid v.$color3;
 					//transform:translateY(20px);
 					animation:anim-animal__desc 12s 500ms alternate linear infinite;
 				}
@@ -109,7 +109,7 @@
 		z-index:2;
 
 		//PAINT
-		border:1px solid v.$ivoire-jaune;
+		border:1px solid v.$color-menu;
 		transition:border 800ms 750ms;
 
 		//ANIMATION
@@ -144,7 +144,7 @@
 	&__barre {
 		width:v.$menu-dim * 4;
 		height:1px;
-		background:v.$ivoire-jaune;
+		background:v.$color-menu;
 		position:absolute;
 		transition:transform 1400ms 100ms v.$cubic-rebond;
 
