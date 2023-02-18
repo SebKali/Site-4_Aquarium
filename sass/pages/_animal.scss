@@ -50,15 +50,21 @@
 	}
 
 	&__texte {
+
+		//LAYOUT
+		width:200px;
+		position:relative; //permet d'utiliser le display flex et d'ajuster sa position
+		left:80px;
+		margin:auto;
+
+		//ANIMATION
+		opacity:0;
+		transition:transform 200ms 1s ease-in-out, opacity 200ms ease-in-out;
+
 		display:flex;
 		flex-direction:column;
 		justify-content:center;
 		align-items:flex-start;
-
-		width:200px;
-		margin:auto;
-		position:relative;
-		left:50px;
 
 		&--titre {
 			display:block;

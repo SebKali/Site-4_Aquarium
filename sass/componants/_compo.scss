@@ -12,6 +12,7 @@
 	border:1px solid v.$color-bubble;
 	position:absolute;
 	border-radius:20px;
+	transition:all 1s;
 
 	@include m.bubble-generator (v.$bubble);
 }
